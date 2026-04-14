@@ -37,7 +37,7 @@ export const Popover = ({
       <PopoverTrigger asChild className={classes?.triggerClassNames}>
         {trigger}
       </PopoverTrigger>
-      <PopoverContent>
+      <PopoverContent className={classes?.contentClassNames}>
         {(title || description) && (
           <PopoverHeader className={classes?.headerClassNames}>
             {title && (
@@ -52,7 +52,7 @@ export const Popover = ({
             )}
           </PopoverHeader>
         )}
-        <div className={classes?.contentClassNames}>{content}</div>
+        {content}
       </PopoverContent>
     </PopoverCore>
   );

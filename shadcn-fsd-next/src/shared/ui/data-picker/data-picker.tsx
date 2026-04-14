@@ -30,7 +30,7 @@ export const DataPicker = ({
     throw new Error('Unsupported locale');
   }
 
-  const [date, setDate] = useState<Undefinedable<Date>>(initialValue);
+  const [date, setDate] = useState<Optional<Date>>(initialValue);
 
   const handleSelect = (date: Date | undefined) => {
     setDate(date);

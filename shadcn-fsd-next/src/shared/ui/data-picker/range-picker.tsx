@@ -1,7 +1,5 @@
 'use client';
 
-//! Работает не корректно проблема shadcn и его стилей
-
 import { useState } from 'react';
 import { type DateRange } from 'react-day-picker';
 import { addDays } from 'date-fns';
@@ -78,7 +76,6 @@ export const RangePicker = ({
       trigger={Trigger}
       content={Content}
       classes={{
-        triggerClassNames: '',
         contentClassNames: 'w-auto p-0',
       }}
     />
